@@ -1,15 +1,16 @@
- # HoBom                                                                                                                                                                                                                                                                                                                                  
-                                                                                                                                                                                                                                                                                                                                           
-  A polyglot microservices platform built with **Transactional Outbox Pattern**, **Hexagonal Architecture**, and **event-driven communication** via Kafka and gRPC.                                                                                                                                                                        
-                                                                                                                                                                                                                                                                                                                                           
-  ## Architecture Overview                                                                                                                                                                                                                                                                                                                 
-                                                                                                                                                                                                                                                                                                                                           
+ # HoBom
+
+  A polyglot microservices platform built with **Transactional Outbox Pattern**, **Hexagonal Architecture**, and **event-driven communication** via Kafka and gRPC.
+  
+
+  ## Architecture Overview
+
                       ┌─────────────────────┐
-                      │      Client App      │                                                                                                                                                                                                                                                                                             
-                      └──────────┬──────────┘                                                                                                                                                                                                                                                                                              
-                                 │                                                                                                                                                                                                                                                                                                         
-                                 ▼                                                                                                                                                                                                                                                                                                         
-                      ┌─────────────────────┐                                                                                                                                                                                                                                                                                              
+                      │      Client App      │                                             
+                      └──────────┬──────────┘
+                                 │
+                                 ▼
+                      ┌─────────────────────┐                                              
                       │      API Gateway     │
                       └──────────┬──────────┘
                                  │
@@ -101,7 +102,7 @@
 
   | Concern | Technology |
   |---------|-----------|
-  | Languages | TypeScript, Go, Kotlin, C#, Python |
+  | Languages | TypeScript, Go, Kotlin, C# |
   | Databases | MongoDB (Atlas), PostgreSQL |
   | Messaging | Apache Kafka |
   | Caching / DLQ | Redis |
